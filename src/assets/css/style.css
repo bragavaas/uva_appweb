@@ -1,4 +1,7 @@
 /* Basic styling for the header */
+h1,h2,h3,h4,h5,h6, p, span, li, a, label{
+    font-family: 'Roboto', sans-serif;
+}
 header {
     background-color: transparent;
     color: #fff;
@@ -8,12 +11,9 @@ header {
     z-index: 999;
 }
 .row{
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 .col-1 {
     width: 8.33%; /* 1/12 */
@@ -78,7 +78,6 @@ header {
     font-size: 1.2em;
 }
 
-
 /*FOOTER STYLES*/
 nav ul {
     list-style: none;
@@ -131,7 +130,7 @@ footer {
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
-    backgund-size: cover;
+    background-size: cover;
     position: relative;
     bottom: 165px;
     width: 100%;
@@ -153,6 +152,15 @@ footer {
     padding: 50px 0;
     margin: 50px 0px;
 }
+.homepage-featured-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+}
+
 .homepage-featured-intro-text{
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -167,4 +175,126 @@ footer {
     font-size: 1.2em;
     font-weight: 400;
     color: #0000008a;
+}
+.featured-item{
+    background-color: #fff;
+    margin: 0px 20px;
+}
+.featured-item img{
+    width: 100%;
+}
+.featured-item-details{
+    padding: 20px;
+}
+.featured-item-details span{
+    font-size: 1.2em;
+}
+.yacht-hourly-rate{
+    background-color: #17abe5;
+    color: #fff;
+    width: 100px;
+    font-size: 1.2em;
+    padding: 10px 10px 10px 10px;
+    z-index: 999;
+    position: relative;
+    bottom: 50px;
+}
+.yacht-ad{
+    color: #323232;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+.yacht-ad:hover{
+    color: #17abe5;
+}
+.booking-footer{
+    background-color: #0B0E1E;
+    height: 400px;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.booking-form{
+    background-color: #fff;
+    padding: 20px;
+}
+.booking-form h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.booking-form label{
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000c6;
+}
+.submit-btn{
+    background-color: #17abe5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.submit-btn:hover{
+    background-color: #0b8ecf;
+}
+.booking-form input{
+    margin-top: 10px;
+    width: 95% !important;
+}
+.booking-form input, select{
+    border: 1px solid #0000008a;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.booking-form input, select{
+    width: 100%;
+}
+.booking-footer-info{
+    color: gray;
+
+}
+.booking-footer-info h2{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: gray;
+}
+.booking-footer-links h2{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: gray;
+}
+.booking-footer-links li a{
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 35px;
+}
+.booking-footer-links i{
+    color: gray;
+    font-size: .9em;
+}
+.booking-footer-info p, span{
+    font-size: 1.2em;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 15px 0px;
+    line-height: 22px;
+}
+
+.booking-footer-info span{
+    font-size: 1.4em; 
+}
+.booking-quote{
+    border-left-color: 1px solid #fff;
 }
