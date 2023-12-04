@@ -230,14 +230,24 @@ footer {
 }
 .submit-btn{
     background-color: #17abe5;
+    height: 35px !important;
+    width: 100% !important;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: none;
     font-size: 1.2em;
     font-weight: 400;
     margin-top: 20px;
     cursor: pointer;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.full-field{
+    width: 95% !important;
 }
 .submit-btn:hover{
     background-color: #0b8ecf;
@@ -297,4 +307,120 @@ footer {
 }
 .booking-quote{
     border-left-color: 1px solid #fff;
+}
+.register-form-section{
+    background-color: #f5f5f5;
+    width: 100% !important;
+    padding: 50px 0;
+    margin: 50px 0px;
+}
+#register-intro-text{
+    font-size: 2.5em !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form input{
+    margin-top: 10px;
+    height: 30px !important;
+    width: 90% !important;
+    border-radius: 5px;
+    border: 1px solid #0000008a;
+}
+form textarea{
+    margin-top: 10px;
+    height: 100px !important;
+    width: 90% !important;
+    border-radius: 5px;
+    border: 1px solid #0000008a;
+}
+form label{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #000000c6;
+}
+.register-form-fields{
+    width: 100%;
+}
+.contact-section{
+    background-color: lightgray !important;
+    width: 100% !important;
+    padding: 50px 0;
+    margin: 50px 0px;
+    height: auto;
+    margin-top: -170px;
+}
+.contact-section h2{
+    font-size: 2.5em !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-section p{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000000c6;
+    text-align: center;
+}
+.contact-form{
+    width: 60%;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-contact-inner {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.footer-contact-inner h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer-contact-inner p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+.homepage-featured-intro-text h3{
+    margin: 10px 0px; 
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.homepage-featured-intro-text p{
+    font-size: 1em;
+    font-weight: 400;
+    color: #0000008a;
+    text-align: left;
+}
+#about-image{
+    width: 80% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    border-radius: 5px;
+}
+.homepage-intro-text h1{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.homepage-intro-text p{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
 }

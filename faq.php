@@ -1,4 +1,6 @@
-<?php include('../includes/header.php'); ?>
+<?php include('./includes/header.php'); ?>
+
+
 
 <section class="homepage">
     <div class="container">
@@ -14,51 +16,33 @@
 </section>
 
     <section class="homepage-featured">
+        <div class="container">
         <div class="row">
             <div class="col-12 homepage-featured-intro-text">
-                <h2>O Centro de aluguel de Iates mais movimentado da cidade</h2>
-                <p>Navegue pela nossa lista crescente de iates particulares disponíveis para aluguel no Rio, com mais cidades em breve.</p>
+                <h2>FAQ: Tire suas dúvidas!</h2>
+                <p style="text-align:center !important; margin-bottom: 30px">Saiba como nosso serviço funciona</p>
+                <div class="col-6">
+     
+                <h3>Quais tipos de eventos podem ser realizados em um iate alugado pela Marina Luxo & Eventos?</h3>
+                <p>Oferecemos uma ampla gama de eventos para nossos clientes. Desde festas privadas, como aniversários e casamentos íntimos, até eventos corporativos, como reuniões de negócios ou conferências, estamos preparados para personalizar e atender às necessidades específicas de cada ocasião.</p>
+                <hr style="margin:50px 20px">
+                <h3>Posso personalizar meu evento a bordo do iate?</h3>
+                <p>O processo de reserva é simples e personalizado. Entre em contato conosco para discutir os detalhes do seu evento, incluindo datas, número de convidados e quaisquer requisitos específicos. Com base nessas informações, ajudaremos a selecionar o iate ideal para o seu evento e procederemos com os arranjos necessários para tornar sua experiência única.</p>
+                <hr style="margin:50px 20px">
+                <h3>A Marina Luxo & Eventos oferece serviços de catering e entretenimento?</h3>
+                <p>Sim, oferecemos uma variedade de opções de catering para atender aos paladares mais exigentes. De menus gourmet a petiscos descontraídos, nossa equipe de chefs está preparada para criar experiências gastronômicas excepcionais. Além disso, podemos organizar entretenimento a bordo, como música ao vivo, DJs, atividades aquáticas e muito mais.</p>
+                <hr style="margin:50px 20px">
+                <h3>Há restrições quanto às áreas de navegação dos iates?</h3>
+                <p>Nossos iates podem navegar em diversas áreas, mas algumas restrições podem existir dependendo das regulamentações locais, condições climáticas e outros fatores. Nossa equipe fornecerá informações detalhadas sobre as áreas disponíveis para navegação e orientações necessárias para garantir uma experiência segura e agradável durante o evento.</p>
+            </div>
+            <div class="col-6">
+                <img src="./assets/img/party.jpg" id="about-image" alt="">
+            </div>
             </div>
         </div>
-        <div class="row homepage-featured-items">
-            <div class="col-4">
-                <div class="featured-item">
-                    <img src="../assets/img/featured-1.jpg" alt="Featured Item">
-                    <div class="featured-item-details">
-                        <div class="yacht-hourly-rate"><span><strong>$850/hour</strong></span></div>
-                        <h3 class="yacht-ad"> ENJOY 65 FOOT CARVER YACHT IN TORONTO</h3>
-                        <div class="inline yacht-type"><i class="fa-solid fa-house"></i><span> Cruiser / With Captain</span></div>
-                        <div class="inline yacht-location"><i class="fa-solid fa-location-dot"></i><span> Rio de Janeiro</span></div>
-                        <div class="inline yacht-location"><i class="fa-solid fa-people-group"></i><span><strong> Capacidade:</strong> 20 Pessoas</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-            <div class="featured-item">
-                    <img src="../assets/img/featured-2.jpg" alt="Featured Item">
-                    <div class="featured-item-details">
-                        <div class="yacht-hourly-rate"><span><strong>$550/hour</strong></span></div>
-                        <h3 class="yacht-ad"> Sea Ray 500 Party Boat in Toronto</h3>
-                        <div class="inline yacht-type"><i class="fa-solid fa-house"></i><span> Cruiser / With Captain</span></div>
-                        <div class="inline yacht-location"><i class="fa-solid fa-location-dot"></i><span> Rio de Janeiro</span></div>
-                        <div class="inline yacht-location"><i class="fa-solid fa-people-group"></i><span><strong> Capacidade:</strong> 15 Pessoas</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-            <div class="featured-item">
-                    <img src="../assets/img/featured-3.jpg" alt="Featured Item">
-                    <div class="featured-item-details">
-                        <div class="yacht-hourly-rate"><span><strong>$300/hour</strong></span></div>
-                        <h3 class="yacht-ad"> 27' Private Yacht Rental</h3>
-                        <div class="inline yacht-type"><i class="fa-solid fa-house"></i><span> Cruiser / With Captain</span></div>
-                        <div class="inline yacht-location"><i class="fa-solid fa-location-dot"></i><span> Rio de Janeiro</span></div>
-                        <div class="inline yacht-location"><i class="fa-solid fa-people-group"></i><span><strong> Capacidade:</strong> 8 Pessoas</span></div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+
 <section class="booking-footer">
     <div class="container">
     <div class="row">
