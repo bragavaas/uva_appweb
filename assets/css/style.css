@@ -204,6 +204,16 @@ footer {
     font-size: 32px;
     padding-bottom: 10px;
 }
+a .yacht-ad{
+    color: #323232;
+    font-size: 32px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+
+}
 .yacht-ad:hover{
     color: #17abe5;
 }

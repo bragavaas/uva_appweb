@@ -1,5 +1,5 @@
 <?php include('./includes/header.php'); ?>
-<?php require_once('./includes/db.php');?>
+<?php include('./includes/db.php');?>
 
 
 
@@ -16,41 +16,35 @@
     </div>
 </section>
 
-    <section class="homepage-featured">
-        <div class="row">
-            <div class="col-12 homepage-featured-intro-text">
-                <h2>O Centro de aluguel de Iates mais movimentado da cidade</h2>
-                <p style="text-align:center !important">Navegue pela nossa lista crescente de iates particulares disponíveis para aluguel no Rio, com mais cidades em breve.</p>
-            </div>
-        </div>
-            <?php
-            $query = "SELECT * FROM yachts ORDER BY RAND() LIMIT 3;";
-            $iates = $conn->query($query);
-            $conn->close();
-            ?>
-            <div class="row homepage-featured-items">
-            <?php foreach($iates as $iate): ?>
-                <div class="col-4">
-                    <div class="featured-item">
-                        <a href="details.php?id=<?= $iate['YachtID'] ?>">
-                            <img src="./assets/img/featured-1.jpg" alt="Featured Item">
-                        </a>
-                        <div class="featured-item-details">
-                            <div class="yacht-hourly-rate"><span><strong><?= $iate['HourlyCost'] ?>/hora</strong></span></div>
-                            <a style="" href="details.php?id=<?= $iate['YachtID'] ?>><h3 class="yacht-ad"><?= $iate['Yacht_ad'] ?></h3></a>
-                            <div class="inline yacht-type"><i class="fa-solid fa-sailboat"></i><span> <?= $iate['YachtName'] ?> </span></div>
-                            <div class="inline yacht-type"><i class="fa-solid fa-compass"></i><span> Iate / Com capitão</span></div>
-                            <div class="inline yacht-location"><i class="fa-solid fa-location-dot"></i><span> <?= $iate['CurrentLocation'] ?></span></div>
-                            <div class="inline yacht-location"><i class="fa-solid fa-people-group"></i><span><strong> Capacidade:</strong> <?= $iate['Cabins'] ?> Pessoas</span></div>
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+<?php 
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM yachts WHERE YachtID = $id;";
+    $result = $conn->query($sql);
+    $result = $conn->query($sql);
 
-          
-        </div>
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+    
+        echo '<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h1 style="text-align: center; margin-bottom: 20px;">Detalhes do Iate: ' . $row['YachtName'] . '</h1>';
+    
+        // Loop through the yacht details and display them with some basic styling
+        foreach ($row as $key => $value) {
+            if (!is_numeric($key)) { // Exclude numeric keys
+                echo '<p style="margin-bottom: 10px;"><strong>' . ucwords(str_replace('_', ' ', $key)) . ':</strong> ' . $value . '</p>';
+            }
+        }
+    
+        echo '</div>';
+    } else {
+        echo "Nenhum detalhe encontrado para este iate.";
+    }
 
-    </section>
+    // Close the database connection
+    $conn->close();
+    ?>
+    
+
 <section class="booking-footer">
     <div class="container">
     <div class="row">
